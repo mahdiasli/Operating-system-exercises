@@ -1,1 +1,44 @@
-ipsf
+مراحل : 
+
+برای نصب IPFS در لینوکس، می‌توانید مراحل زیر را دنبال کنید:
+
+1. دانلود بسته IPFS:
+   - برای لینوکس 64 بیتی:
+     ```shell
+     wget https://dist.ipfs.io/go-ipfs/v0.11.2/go-ipfs_v0.11.2_linux-amd64.tar.gz
+     ```
+   - برای لینوکس 32 بیتی:
+     ```shell
+     wget https://dist.ipfs.io/go-ipfs/v0.11.2/go-ipfs_v0.11.2_linux-386.tar.gz
+     ```
+
+2. اکسترکت بسته:
+   ```shell
+   tar xvfz go-ipfs_v0.11.2_linux-amd64.tar.gz
+   ```
+
+3. ورود به پوشه مربوطه:
+   ```shell
+   cd go-ipfs
+   ```
+
+4. نصب IPFS:
+   ```shell
+   sudo ./install.sh
+   ```
+
+5. اجرای گره IPFS:
+   ```shell
+   ipfs init
+   ```
+
+   این دستور مخزن IPFS را مقداردهی اولیه می‌کند.
+
+6. برای اجرای گره IPFS، دستور زیر را وارد کنید:
+   ```shell
+   ipfs daemon
+   ```
+
+   این دستور گره IPFS را اجرا می‌کند و گره را به شبکه IPFS متصل می‌کند.
+
+اکنون شما IPFS را در سیستم لینوکس خود نصب کرده و گره IPFS را اجرا کرده‌اید. می‌توانید کدهای قبلی را برای ارسال و دریافت فایل با استفاده از IPFS اجرا کنید.
